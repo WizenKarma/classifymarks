@@ -3,11 +3,12 @@ import unittest
 
 import classify
 
-class TestFileInput(unittest.TestCase):
+class InequalityTest(unittest.TestCase):
 	
-
-	def fileInput(self):
-		self.assertTrue(True)
+	def test_equal(self):
+		a = classify.getData(open('marks.dat'))
+		b = classify.getData(open('marks.dat'))
+		self.assertEqual(len(a),len(b))
 
 if __name__ == '__main__':
 	unittest.main()
