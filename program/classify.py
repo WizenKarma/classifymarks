@@ -32,10 +32,12 @@ def showRanges(data):
 
 
 fname = open("marks.dat")
-#boundaries = list(map(int, sys.argv[2:]))
+boundaries = list()
+boundaries.append(25)
+boundaries.append(75)
 data = getData(fname)
 print(len(data))
-#showRanges(data)
+showRanges(data)
 
 
 
