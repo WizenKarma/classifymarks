@@ -3,12 +3,11 @@ import unittest
 
 import classify
 
-class InequalityTest(unittest.TestCase):
+class TestListSize(unittest.TestCase):
 	
 	def test_equal(self):
 		a = classify.getData(open('marks.dat'))
-		b = classify.getData(open('marks.dat'))
-		self.assertEqual(len(a),len(b))
+		self.assertEqual(len(a),6)
 
 if __name__ == '__main__':
 	unittest.main()
