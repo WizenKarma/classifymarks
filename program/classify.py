@@ -31,11 +31,11 @@ def showRanges(data):
         lower=upper
 
 
-fname = open(sys.argv[1])
-boundaries = list(map(int, sys.argv[2:]))
-
+fname = open("marks.dat")
+#boundaries = list(map(int, sys.argv[2:]))
 data = getData(fname)
-showRanges(data)
+print(len(data))
+#showRanges(data)
 
 
 
